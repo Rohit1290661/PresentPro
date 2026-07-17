@@ -1,0 +1,777 @@
+/* ===========================
+   PRESENTPRO CSS - PART 1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#ffffffee;
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #eee;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo h2{
+    font-size:30px;
+    color:#4f46e5;
+    font-weight:800;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4f46e5;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:#4f46e5;
+    color:#fff;
+    border-radius:50px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn:hover{
+    background:#3128d4;
+    transform:translateY(-3px);
+}
+
+.btn2{
+    display:inline-block;
+    padding:14px 32px;
+    border:2px solid #4f46e5;
+    color:#4f46e5;
+    border-radius:50px;
+    margin-left:15px;
+    transition:.35s;
+}
+
+.btn2:hover{
+    background:#4f46e5;
+    color:#fff;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:100px 0;
+    background:
+    linear-gradient(135deg,#eef2ff,#ffffff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.15;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:35px;
+}
+
+.hero-image img{
+    border-radius:25px;
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.15);
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    margin-top:-40px;
+}
+
+.stats-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.stats-grid div{
+
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.stats-grid h2{
+
+    color:#4f46e5;
+    font-size:38px;
+    margin-bottom:8px;
+
+}
+
+.stats-grid p{
+
+    color:#777;
+
+}
+
+/* ================= SECTION TITLE ================= */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#777;
+    max-width:650px;
+    margin:auto;
+
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.card{
+
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:45px;
+    color:#4f46e5;
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#777;
+
+}
+/* ==========================================
+   PRESENTPRO CSS - PART 2
+   Portfolio | Pricing | About
+==========================================*/
+
+/* ---------- PORTFOLIO ---------- */
+
+#portfolio{
+    background:#f8f9ff;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.portfolio-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.portfolio-card h3{
+    padding:25px;
+    text-align:center;
+    font-size:22px;
+}
+
+/* ---------- PRICING ---------- */
+
+.pricing{
+    background:#ffffff;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.price-card{
+    background:#fff;
+    border-radius:25px;
+    padding:45px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    position:relative;
+    transition:.35s;
+    border:2px solid transparent;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.price-card.featured{
+    border:2px solid #4f46e5;
+    transform:scale(1.04);
+}
+
+.badge{
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:#4f46e5;
+    color:#fff;
+    padding:8px 16px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.price-card h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.price-card h2{
+    font-size:54px;
+    color:#4f46e5;
+    margin-bottom:25px;
+}
+
+.price-card ul{
+    margin-bottom:35px;
+}
+
+.price-card li{
+    padding:10px 0;
+    color:#666;
+    border-bottom:1px solid #eee;
+}
+
+.price-card .btn{
+    width:100%;
+}
+
+/* ---------- ABOUT ---------- */
+
+#about{
+    background:#f8f9ff;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.about-grid h2{
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.about-grid p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.about-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.about-list li{
+    font-size:18px;
+    color:#444;
+    padding-left:10px;
+}
+
+/* ---------- EXTRA SPACING ---------- */
+
+.price-card,
+.card,
+.portfolio-card{
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.price-card:hover,
+.card:hover,
+.portfolio-card:hover{
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+/* ==========================================
+   PRESENTPRO CSS - PART 3
+   Testimonials | FAQ | Contact | Footer
+   Responsive
+==========================================*/
+
+/* ---------- TESTIMONIALS ---------- */
+
+.testimonials{
+    background:#4f46e5;
+    color:#fff;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.testimonial{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.testimonial:hover{
+    transform:translateY(-8px);
+}
+
+.testimonial p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.testimonial h4{
+    font-size:18px;
+}
+
+/* ---------- FAQ ---------- */
+
+.faq{
+    background:#f8f9ff;
+}
+
+.faq-item{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.faq-item h3{
+    margin-bottom:12px;
+    color:#222;
+}
+
+.faq-item p{
+    color:#666;
+}
+
+/* ---------- CONTACT ---------- */
+
+#contact{
+    background:#fff;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:16px 20px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color:#4f46e5;
+    box-shadow:0 0 0 3px rgba(79,70,229,.15);
+}
+
+form textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#111827;
+    color:#fff;
+    padding:70px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+    margin-bottom:40px;
+}
+
+footer h2,
+footer h3{
+    margin-bottom:18px;
+}
+
+footer p{
+    color:#c9c9c9;
+}
+
+footer ul li{
+    margin-bottom:12px;
+}
+
+footer ul li a{
+    color:#c9c9c9;
+    transition:.3s;
+}
+
+footer ul li a:hover{
+    color:#fff;
+    padding-left:6px;
+}
+
+.social{
+    display:flex;
+    gap:15px;
+}
+
+.social a{
+    width:45px;
+    height:45px;
+    background:#222;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    transition:.3s;
+}
+
+.social a:hover{
+    background:#4f46e5;
+    transform:translateY(-5px);
+}
+
+.copyright{
+    text-align:center;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#bdbdbd;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:992px){
+
+    .hero-grid,
+    .about-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero-buttons{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .btn2{
+        margin-left:0;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .hero{
+        padding:70px 0;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+    .price-card.featured{
+        transform:none;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing-grid,
+    .services-grid,
+    .portfolio-grid,
+    .testimonial-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn,
+    .btn2{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin:10px 0;
+    }
+
+    .logo h2{
+        font-size:26px;
+    }
+
+}
+/* ==========================
+   WhatsApp Floating Button
+========================== */
+
+.whatsapp-float{
+
+    position:fixed;
+    width:65px;
+    height:65px;
+
+    bottom:25px;
+    right:25px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    z-index:9999;
+
+    transition:.3s;
+
+    animation:whatsappPulse 2s infinite;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.12);
+
+    background:#1ebc59;
+
+}
+
+@keyframes whatsappPulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,.6);
+
+}
+
+70%{
+
+box-shadow:0 0 0 20px rgba(37,211,102,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.whatsapp-float{
+
+width:58px;
+height:58px;
+
+font-size:30px;
+
+bottom:20px;
+right:20px;
+
+}
+
+}
